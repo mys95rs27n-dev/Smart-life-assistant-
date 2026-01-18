@@ -256,7 +256,7 @@ async def get_daily_tip():
         return serialize_doc(tip_dict)
     
     except Exception as e:
-        logger.error(f"Error generating daily tip: {e}")
+        print(f"Error generating daily tip: {e}")
         # Return a default tip if AI fails
         default_tip = {
             'tip': 'ابدأ يومك بتحديد أهم ثلاث مهام وركز عليها. النجاح يبدأ بخطوة صغيرة! 🌟',
